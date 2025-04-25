@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ovo je primjer HTML5 stranice koja demonstrira osnovne HTML elemente.">
+  <meta http-equiv="Content-Language" content="en">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Start Page</title>
+</head>
+<body>
+  <header>
+    <h1>Weather data page</h1>
+  </header>
+  
+  <h1 class="table_name">Weather data</h1>
+  
+  <div id="filteri">
+    <select id="filter-season">
+      <option value="">Choose Season</option>
+      <option value="Spring">Spring</option>
+      <option value="Summer">Summer</option>
+      <option value="Autumn">Autumn</option>
+      <option value="Winter">Winter</option>
+    </select>
+
+    <select id="filter-location">
+      <option value="">Choose Location</option>
+      <option value="inland">Inland</option>
+      <option value="coastal">Coastal</option>
+      <option value="mountain">Mountain</option>
+    </select>
+
+    <input type="number" id="filter-temp-min" placeholder="Min temperature" />
+    <input type="number" id="filter-temp-max" placeholder="Max temperature" />
+
+    <select id="filter-weather-type">
+      <option value="">Choose Weather Type</option>
+      <option value="Sunny">Sunny</option>
+      <option value="Rainy">Rainy</option>
+      <option value="Cloudy">Cloudy</option>
+    </select>
+		<label for="filter-value">Uv Index (1 to 14):</label>
+		<input type="range" id="filter-value" min="1" max="14" value="1" step="1">
+		<span id="value-display">1</span> 
+
+    <button id="apply-filters">Filter</button>
+  </div>
+
+  <section class="content" id="table-container">
+    <table id="temperature-table">
+      <thead>
+        <tr>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+  <script src="script.js"></script>
+
+  <aside id="trip-plan">
+	<h2>My Trip Plan</h2>
+	<ul id="trip-list">
+	</ul>
+	<button id="confirm-trip">Confirm Trip Plan</button>
+  </aside>
+</section>
+
+  <footer>
+    <p>&copy; 2025. Web Programiranje. Kristian Džoić, DRD.</p>
+  </footer>
+</body>
+</html>
